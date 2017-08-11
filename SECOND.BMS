@@ -1,0 +1,46 @@
+         PRINT NOGEN
+ATMBM    DFHMSD TYPE=&SYSPARM,                                         C
+               MAPATTS=(COLOR,HILIGHT),                                C
+               TIOAPFX=NO
+ATMBMS   DFHMDI SIZE=(24,80)
+         DFHMDF ATTRB=(PROT,BRT),                                      C
+               COLOR=BLUE,                                             C
+               INITIAL='***********************************************C
+               *******************************',                       C
+               LENGTH=78,                                              C
+               POS=(1,1)
+         DFHMDF ATTRB=(PROT,BRT),                                      C
+               COLOR=RED,                                              C
+               HILIGHT=REVERSE,                                        C
+               INITIAL='CAPGEMINI BANK',                               C
+               LENGTH=14,                                              C
+               POS=(3,33)
+         DFHMDF ATTRB=(PROT,BRT),                                      C
+               COLOR=BLUE,                                             C
+               INITIAL='***********************************************C
+               ********************************',                      C
+               LENGTH=79,                                              C
+               POS=(5,1)
+         DFHMDF ATTRB=(PROT,BRT),                                      C
+               INITIAL='SELECT A TRANSACTION',                         C
+               LENGTH=20,                                              C
+               POS=(7,31)
+         DFHMDF ATTRB=(PROT,BRT),                                      C
+               COLOR=BLUE,                                             C
+               INITIAL='***********************************************C
+               *******************************',                       C
+               LENGTH=78,                                              C
+               POS=(22,1)
+         DFHMDF ATTRB=(PROT,BRT),                                      C
+               COLOR=GREEN,                                            C
+               INITIAL='ENTER = NEXT',                                 C
+               LENGTH=50,                                              C
+               POS=(23,5)
+         DFHMDF ATTRB=(PROT,BRT),                                      C
+               COLOR=BLUE,                                             C
+               INITIAL='***********************************************C
+               *******************************',                       C
+               LENGTH=78,                                              C
+               POS=(24,1)
+         DFHMSD TYPE=FINAL
+         END

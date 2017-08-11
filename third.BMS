@@ -1,0 +1,67 @@
+third    DFHMSD TYPE=&SYSPARM
+third    DFHMDI SIZE=(24,80)
+         DFHMDF ATTRB=(PROT,BRT),                                      C
+               INITIAL='***********************************************C
+               ********************************',                      C
+               LENGTH=79,                                              C
+               POS=(1,1)
+BANKNAME DFHMDF ATTRB=(PROT,BRT),                                      C
+               INITIAL='CAPGEMINI BANK',                               C
+               LENGTH=14,                                              C
+               POS=(3,34)
+         DFHMDF ATTRB=(PROT,BRT),                                      C
+               INITIAL='***********************************************C
+               ********************************',                      C
+               LENGTH=79,                                              C
+               POS=(5,1)
+ACCTYPE  DFHMDF ATTRB=(PROT,BRT),                                      C
+               INITIAL='ACCOUNT TYPE',                                 C
+               LENGTH=12,                                              C
+               POS=(7,34)
+TYPE1    DFHMDF ATTRB=(PROT,BRT),                                      C
+               INITIAL='i.SAVINGS ACCOUNT',                            C
+               LENGTH=17,                                              C
+               POS=(11,31)
+TYPE2    DFHMDF ATTRB=(PROT,BRT),                                      C
+               INITIAL='ii.CURRENT ACCOUNT',                           C
+               LENGTH=18,                                              C
+               POS=(13,30)
+SUBMIT   DFHMDF ATTRB=(PROT,BRT),                                      C
+               INITIAL='1. SUBMIT',                                    C
+               LENGTH=9,                                               C
+               POS=(17,31)
+CANCEL   DFHMDF ATTRB=(PROT,BRT),                                      C
+               INITIAL='2. CANCEL',                                    C
+               LENGTH=9,                                               C
+               POS=(18,31)
+OPTION   DFHMDF ATTRB=(PROT,BRT),                                      C
+               INITIAL='OPT :',                                        C
+               LENGTH=5,                                               C
+               POS=(20,47)
+         DFHMDF ATTRB=(UNPROT,BRT),                                    C
+               INITIAL='_',                                            C
+               LENGTH=1,                                               C
+               POS=(20,54)
+         DFHMDF ATTRB=PROT,                                            C
+               LENGTH=1,                                               C
+               POS=(20,56)
+         DFHMDF ATTRB=(PROT,BRT),                                      C
+               INITIAL='***********************************************C
+               ********************************',                      C
+               LENGTH=79,                                              C
+               POS=(22,1)
+         DFHMDF ATTRB=(PROT,BRT),                                      C
+               INITIAL='ENTER = NEXT',                                 C
+               LENGTH=12,                                              C
+               POS=(23,5)
+         DFHMDF ATTRB=(PROT,BRT),                                      C
+               INITIAL='_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _',      C
+               LENGTH=40,                                              C
+               POS=(23,18)
+         DFHMDF ATTRB=(PROT,BRT),                                      C
+               INITIAL='***********************************************C
+               ********************************',                      C
+               LENGTH=79,                                              C
+               POS=(24,1)
+         DFHMSD TYPE=FINAL
+         END
